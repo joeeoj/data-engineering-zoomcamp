@@ -78,7 +78,7 @@ WHERE
 Review partitioning and clustering video. 
 Partitioning cannot be created on all data types.
 
-Partition on dispatching_base_num and cluster on SR_Flag. SR_Flag can't be used for the partition because it is a BOOL.
+Answer: Since both are STRING columns we have to cluster by both. Neither can be used for partitioning.
 
 ### Question 6: 
 **What improvements can be seen by partitioning and clustering for data size less than 1 GB**  
